@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "ParseSlides.h"
 
 @implementation ViewController
+
+@synthesize parse;
 
 - (void)didReceiveMemoryWarning
 {
@@ -19,7 +22,11 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
+
+
 {
+    parse = [[ParseSlides alloc] init];
+    [parse parseBulletsandReturnDictionaryforSlide];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

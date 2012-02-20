@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ParseSlides.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    ParseSlides *parse;
+    
+}
 
+@property (nonatomic, strong) ParseSlides *parse;
 @end

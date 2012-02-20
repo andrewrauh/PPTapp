@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F93E956F14F22C9D00D1552A /* slide3.xml in Resources */ = {isa = PBXBuildFile; fileRef = F93E956E14F22C9D00D1552A /* slide3.xml */; };
 		F9A2066414EF51D20057E6AB /* ParseSlides.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2066314EF51D20057E6AB /* ParseSlides.m */; };
 		F9A206AF14F029B60057E6AB /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2069414F029B60057E6AB /* CXMLDocument_CreationExtensions.m */; };
 		F9A206B014F029B60057E6AB /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2069614F029B60057E6AB /* CXMLNode_CreationExtensions.m */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F93E956E14F22C9D00D1552A /* slide3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = slide3.xml; path = "../../../../../Desktop/Lecture1 2/ppt/slides/slide3.xml"; sourceTree = "<group>"; };
 		F9A2066214EF51D20057E6AB /* ParseSlides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseSlides.h; sourceTree = "<group>"; };
 		F9A2066314EF51D20057E6AB /* ParseSlides.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseSlides.m; sourceTree = "<group>"; };
 		F9A2069314F029B60057E6AB /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		F9A2069114F029B60057E6AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F93E956E14F22C9D00D1552A /* slide3.xml */,
 				F9A2069214F029B60057E6AB /* Creation */,
 				F9A2069714F029B60057E6AB /* CXHTMLDocument.h */,
 				F9A2069814F029B60057E6AB /* CXHTMLDocument.m */,
@@ -247,6 +250,7 @@
 			files = (
 				F9B4796214EC4D6600AE23B1 /* InfoPlist.strings in Resources */,
 				F9B4796E14EC4D6600AE23B1 /* ViewController.xib in Resources */,
+				F93E956F14F22C9D00D1552A /* slide3.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

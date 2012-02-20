@@ -11,13 +11,13 @@
 
 @interface ParseSlides : NSObject {
 
-    NSMutableDictionary *Slides;
+    //NSMutableDictionary *Slides;
 
 
 }
 
--(NSMutableDictionary *) parseBulletsandReturnDictionaryforSlide;
--(NSMutableDictionary *) buildSlidesDictionary;
+-(void)parseBulletsandReturnDictionaryforSlide;
+//-(NSMutableDictionary *) buildSlidesDictionary;
 
 
 
