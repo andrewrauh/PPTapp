@@ -15,6 +15,9 @@
 		F9454CF914F81A2C00325700 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = F9454CF114F81A2C00325700 /* unzip.c */; };
 		F9454CFA14F81A2C00325700 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = F9454CF314F81A2C00325700 /* zip.c */; };
 		F9454CFE14F81A7500325700 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = F9454CFD14F81A7500325700 /* ZipArchive.mm */; };
+		F9454D0414F839D800325700 /* startupcrashcourse.pptx in Resources */ = {isa = PBXBuildFile; fileRef = F9454D0314F839D800325700 /* startupcrashcourse.pptx */; };
+		F9454D0614F83AAC00325700 /* dylib1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = F9454D0514F83AAC00325700 /* dylib1.o */; };
+		F9454D0814F83B2000325700 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F9454D0714F83B2000325700 /* libz.dylib */; };
 		F9A2066414EF51D20057E6AB /* ParseSlides.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2066314EF51D20057E6AB /* ParseSlides.m */; };
 		F9A206AF14F029B60057E6AB /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2069414F029B60057E6AB /* CXMLDocument_CreationExtensions.m */; };
 		F9A206B014F029B60057E6AB /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2069614F029B60057E6AB /* CXMLNode_CreationExtensions.m */; };
@@ -54,6 +57,9 @@
 		F9454CF414F81A2C00325700 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
 		F9454CFC14F81A7500325700 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = "ziparchive-read-only/ZipArchive.h"; sourceTree = SOURCE_ROOT; };
 		F9454CFD14F81A7500325700 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ZipArchive.mm; path = "ziparchive-read-only/ZipArchive.mm"; sourceTree = SOURCE_ROOT; };
+		F9454D0314F839D800325700 /* startupcrashcourse.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = startupcrashcourse.pptx; sourceTree = "<group>"; };
+		F9454D0514F83AAC00325700 /* dylib1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = dylib1.o; path = usr/lib/dylib1.o; sourceTree = SDKROOT; };
+		F9454D0714F83B2000325700 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F9A2066214EF51D20057E6AB /* ParseSlides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseSlides.h; sourceTree = "<group>"; };
 		F9A2066314EF51D20057E6AB /* ParseSlides.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseSlides.m; sourceTree = "<group>"; };
 		F9A2069314F029B60057E6AB /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
@@ -103,6 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9454D0814F83B2000325700 /* libz.dylib in Frameworks */,
+				F9454D0614F83AAC00325700 /* dylib1.o in Frameworks */,
 				F9B4795814EC4D6500AE23B1 /* UIKit.framework in Frameworks */,
 				F9B4795A14EC4D6500AE23B1 /* Foundation.framework in Frameworks */,
 				F9B4795C14EC4D6500AE23B1 /* CoreGraphics.framework in Frameworks */,
@@ -186,6 +194,9 @@
 		F9B4794814EC4D6500AE23B1 = {
 			isa = PBXGroup;
 			children = (
+				F9454D0714F83B2000325700 /* libz.dylib */,
+				F9454D0514F83AAC00325700 /* dylib1.o */,
+				F9454D0314F839D800325700 /* startupcrashcourse.pptx */,
 				F9B4795D14EC4D6500AE23B1 /* PPT */,
 				F9B4795614EC4D6500AE23B1 /* Frameworks */,
 				F9B4795414EC4D6500AE23B1 /* Products */,
@@ -294,6 +305,7 @@
 				F9B4796E14EC4D6600AE23B1 /* ViewController.xib in Resources */,
 				F93E956F14F22C9D00D1552A /* slide3.xml in Resources */,
 				F9454CF514F81A2C00325700 /* ChangeLogUnzip in Resources */,
+				F9454D0414F839D800325700 /* startupcrashcourse.pptx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

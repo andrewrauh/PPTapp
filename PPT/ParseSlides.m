@@ -17,17 +17,20 @@
 
 
 -(void) unZipPowerPoint:(NSString *)zipPath {
+    
+    zipPath = @"startupcrashcourse.pptx";
     zipArchive = [[ZipArchive alloc]init];
     
     //need to buid path of zip file here
     
-    
+    //need to pass in the 
+    // need to build the sting that contains unzipped files
     
 	//if( [zipArchive  UnzipOpenFile:@"/Volumes/data/testfolder/Archive.zip"] )
     
     if( [zipArchive  UnzipOpenFile:zipPath] )
 	{
-		BOOL ret = [zipArchive UnzipFileTo:@"/Volumes/data/testfolder/extract" overWrite:YES];
+		BOOL ret = [zipArchive UnzipFileTo:@"/" overWrite:YES];
 		if( NO==ret )
 		{
             
@@ -35,11 +38,6 @@
 		}
 		[zipArchive UnzipCloseFile];
 	}
-    
-	//[zipArchive release];
-
-    
-    
     
     
 }

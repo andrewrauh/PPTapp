@@ -37,7 +37,7 @@
 -(void) dealloc
 {
 	[self CloseZipFile2];
-	[super dealloc];
+	//[super dealloc];
 }
 
 -(BOOL) CreateZipFile2:(NSString*) zipFile
@@ -147,7 +147,7 @@
 		unz_global_info  globalInfo = {0};
 		if( unzGetGlobalInfo(_unzFile, &globalInfo )==UNZ_OK )
 		{
-			NSLog(@"%d entries in the zip file",globalInfo.number_entry);
+			NSLog(@"%lu entries in the zip file",globalInfo.number_entry);
 		}
 	}
 	return _unzFile!=NULL;
@@ -258,7 +258,7 @@
 					}
 					
 				}
-				[orgDate release];
+				//[orgDate release];
 				orgDate = nil;
 			}
 			
@@ -302,8 +302,8 @@
 							 initWithCalendarIdentifier:NSGregorianCalendar];
 	NSDate *date = [gregorian dateFromComponents:comps];
 	
-	[comps release];
-	[gregorian release];
+//	[comps release];
+//	[gregorian release];
 	return date;
 }
 
