@@ -8,12 +8,41 @@
 
 #import "ParseSlides.h"
 
-@implementation ParseSlides {
+@implementation ParseSlides 
+@synthesize zipArchive;
+    
+    
+
+
+
+
+-(void) unZipPowerPoint:(NSString *)zipPath {
+    zipArchive = [[ZipArchive alloc]init];
+    
+    //need to buid path of zip file here
+    
+    
+    
+	//if( [zipArchive  UnzipOpenFile:@"/Volumes/data/testfolder/Archive.zip"] )
+    
+    if( [zipArchive  UnzipOpenFile:zipPath] )
+	{
+		BOOL ret = [zipArchive UnzipFileTo:@"/Volumes/data/testfolder/extract" overWrite:YES];
+		if( NO==ret )
+		{
+            
+            
+		}
+		[zipArchive UnzipCloseFile];
+	}
+    
+	//[zipArchive release];
+
+    
+    
     
     
 }
-
-
 
 
 -(void) parseBulletsandReturnDictionaryforSlide {

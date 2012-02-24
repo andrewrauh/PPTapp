@@ -8,16 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "TouchXML.h"
+#import "ZipArchive.h"
 
 @interface ParseSlides : NSObject {
 
     //NSMutableDictionary *Slides;
+    ZipArchive *zipArchive;
 
 
 }
 
 -(void)parseBulletsandReturnDictionaryforSlide;
+-(void)unZipPowerPoint:(NSString *)zipPath;
+
 //-(NSMutableDictionary *) buildSlidesDictionary;
+@property (nonatomic, strong) ZipArchive *zipArchive;
 
 
 
