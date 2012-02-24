@@ -24,7 +24,7 @@
     NSData *XMLData = [NSData dataWithContentsOfFile:XMLPath];
     CXMLDocument *doc = [[CXMLDocument alloc] initWithData:XMLData options:0 error:nil];
     NSArray *nodes = NULL;
-    nodes = [doc nodesForXPath:@"//" error:nil];
+    nodes = [doc nodesForXPath:@"//p:sp" error:nil];
     
     
     
@@ -34,7 +34,7 @@
         for(counter = 0; counter < [node childCount]; counter++) {
             //  common procedure: dictionary with keys/values from XML node
             [item setObject:[[node childAtIndex:counter] stringValue] forKey:[[node childAtIndex:counter] name]];
-            NSLog(item);
+            //NSLog(item);
         }
         
         //  and here it is - attributeForName! Simple as that.
