@@ -24,6 +24,7 @@
 		F9A206B914F029B60057E6AB /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A206A814F029B60057E6AB /* CXMLNode_PrivateExtensions.m */; };
 		F9A206BA14F029B60057E6AB /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A206AA14F029B60057E6AB /* CXMLNode_XPathExtensions.m */; };
 		F9A206BB14F029B60057E6AB /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A206AD14F029B60057E6AB /* CTidy.m */; };
+		F9A5A91614FB3D1A009B7585 /* presentation.xml in Resources */ = {isa = PBXBuildFile; fileRef = F9A5A91514FB3D1A009B7585 /* presentation.xml */; };
 		F9B4795814EC4D6500AE23B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B4795714EC4D6500AE23B1 /* UIKit.framework */; };
 		F9B4795A14EC4D6500AE23B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B4795914EC4D6500AE23B1 /* Foundation.framework */; };
 		F9B4795C14EC4D6500AE23B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B4795B14EC4D6500AE23B1 /* CoreGraphics.framework */; };
@@ -35,7 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F93E956E14F22C9D00D1552A /* slide3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = slide3.xml; path = "../../../../../Desktop/Lecture1 2/ppt/slides/slide3.xml"; sourceTree = "<group>"; };
+		F93E956E14F22C9D00D1552A /* slide3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = slide3.xml; path = "../../../Desktop/Lecture1 2/ppt/slides/slide3.xml"; sourceTree = "<group>"; };
 		F9454D0314F839D800325700 /* startupcrashcourse.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = startupcrashcourse.pptx; sourceTree = "<group>"; };
 		F9454D0714F83B2000325700 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F9A2066214EF51D20057E6AB /* ParseSlides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseSlides.h; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		F9A206AC14F029B60057E6AB /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		F9A206AD14F029B60057E6AB /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		F9A206AE14F029B60057E6AB /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		F9A5A91514FB3D1A009B7585 /* presentation.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = presentation.xml; sourceTree = "<group>"; };
 		F9B4795314EC4D6500AE23B1 /* PPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B4795714EC4D6500AE23B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F9B4795914EC4D6500AE23B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,7 +102,6 @@
 		F9A2069114F029B60057E6AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F93E956E14F22C9D00D1552A /* slide3.xml */,
 				F9A2069214F029B60057E6AB /* Creation */,
 				F9A2069714F029B60057E6AB /* CXHTMLDocument.h */,
 				F9A2069814F029B60057E6AB /* CXHTMLDocument.m */,
@@ -154,6 +155,7 @@
 			children = (
 				F9454D0714F83B2000325700 /* libz.dylib */,
 				F9454D0314F839D800325700 /* startupcrashcourse.pptx */,
+				F93E956E14F22C9D00D1552A /* slide3.xml */,
 				F9B4795D14EC4D6500AE23B1 /* PPT */,
 				F9B4795614EC4D6500AE23B1 /* Frameworks */,
 				F9B4795414EC4D6500AE23B1 /* Products */,
@@ -181,6 +183,7 @@
 		F9B4795D14EC4D6500AE23B1 /* PPT */ = {
 			isa = PBXGroup;
 			children = (
+				F9A5A91514FB3D1A009B7585 /* presentation.xml */,
 				F9A2069114F029B60057E6AB /* Source */,
 				F9B4796614EC4D6600AE23B1 /* AppDelegate.h */,
 				F9B4796714EC4D6600AE23B1 /* AppDelegate.m */,
@@ -259,6 +262,7 @@
 				F9B4796E14EC4D6600AE23B1 /* ViewController.xib in Resources */,
 				F93E956F14F22C9D00D1552A /* slide3.xml in Resources */,
 				F9454D0414F839D800325700 /* startupcrashcourse.pptx in Resources */,
+				F9A5A91614FB3D1A009B7585 /* presentation.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

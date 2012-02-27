@@ -35,7 +35,7 @@
 //		if( NO==ret )
 //		{
 //            
-//            
+//             
 //		}
 //		[zipArchive UnzipCloseFile];
 //	}
@@ -47,12 +47,12 @@
 -(void) parseBulletsandReturnDictionaryforSlide {
     
     NSMutableDictionary *slideContent = [[NSMutableDictionary alloc]init];
-    NSString *XMLPath  = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"slide3.xml"];
+    NSString *XMLPath  = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"presentation.xml"];
     //this will need to be passed in later on
     NSData *XMLData = [NSData dataWithContentsOfFile:XMLPath];
     CXMLDocument *doc = [[CXMLDocument alloc] initWithData:XMLData options:0 error:nil];
     NSArray *nodes = NULL;
-    nodes = [doc nodesForXPath:@"//p:sp" error:nil];
+    nodes = [doc nodesForXPath:@"//p:sldId" error:nil];
     
     
     
@@ -62,7 +62,7 @@
         for(counter = 0; counter < [node childCount]; counter++) {
             //  common procedure: dictionary with keys/values from XML node
             [item setObject:[[node childAtIndex:counter] stringValue] forKey:[[node childAtIndex:counter] name]];
-            //NSLog(item);
+            
         }
         
         //  and here it is - attributeForName! Simple as that.
