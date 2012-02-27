@@ -9,38 +9,39 @@
 #import "ParseSlides.h"
 
 @implementation ParseSlides 
-@synthesize zipArchive;
+//@synthesize zipArchive;
     
     
 
 
 
 
--(void) unZipPowerPoint:(NSString *)zipPath {
-    
-    zipPath = @"startupcrashcourse.pptx";
-    zipArchive = [[ZipArchive alloc]init];
-    
-    //need to buid path of zip file here
-    
-    //need to pass in the 
-    // need to build the sting that contains unzipped files
-    
-	//if( [zipArchive  UnzipOpenFile:@"/Volumes/data/testfolder/Archive.zip"] )
-    
-    if( [zipArchive  UnzipOpenFile:zipPath] )
-	{
-		BOOL ret = [zipArchive UnzipFileTo:@"/" overWrite:YES];
-		if( NO==ret )
-		{
-            
-            
-		}
-		[zipArchive UnzipCloseFile];
-	}
-    
-    
-}
+//-(void) unZipPowerPoint:(NSString *)zipPath {
+//    
+//    zipPath = @"startupcrashcourse.pptx";
+//    zipArchive = [[ZipArchive alloc]init];
+//    
+//    //need to buid path of zip file here
+//    
+//    //need to pass in the 
+//    // need to build the sting that contains unzipped files
+//    
+//	//if( [zipArchive  UnzipOpenFile:@"/Volumes/data/testfolder/Archive.zip"] )
+//    zipPath = [[NSBundle mainBundle] pathForResource:@"startupcrashcourse" 
+//                                                     ofType:@"pptx"];
+//    if( [zipArchive  UnzipOpenFile:zipPath] )
+//	{
+//		BOOL ret = [zipArchive UnzipFileTo:@"/" overWrite:YES];
+//		if( NO==ret )
+//		{
+//            
+//            
+//		}
+//		[zipArchive UnzipCloseFile];
+//	}
+//    
+//    
+//}
 
 
 -(void) parseBulletsandReturnDictionaryforSlide {
